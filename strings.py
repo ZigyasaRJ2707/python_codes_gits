@@ -10,7 +10,19 @@ def if_palindrome(n):
 
     return 1 
 
-n = 727 
-ans = if_palindrome(n)
-print(ans)
-# %%
+def get_sum_of_digits(n): 
+    sum = 0 
+    while n>0: 
+        last_digit = n%10 # find out last digit of number
+        sum+=last_digit # add last digit to sum
+        n = n//10 # truncate the last digit since it's already added
+    return sum
+
+
+n = int(input("enter any number: "))
+ans = get_sum_of_digits(n)
+print(ans) 
+
+
+
+
