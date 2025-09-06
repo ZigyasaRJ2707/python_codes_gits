@@ -18,11 +18,6 @@ def printDiamondFilled(n):
         print(f"{str_margin}{str_middle}{str_margin}\n")
 
 
-n = 7
-printDiamondFilled(n)
-
-
-
 
 def printDiamondEmpty(n): 
     w = 2*n - 1 #width of background square 
@@ -34,15 +29,20 @@ def printDiamondEmpty(n):
         len_star = 2*numStars - 1         # construct line middle
         str_middle = "" # empty 
         for starNum in range(1, numStars+1): 
-            if starNum!=numStars: 
+            if starNum==1: 
                 str_middle+= "* "
-            else: 
+                
+            elif starNum == numStars: 
                 str_middle+="*"
+            else: 
+                str_middle += "  "
 
         length_margin = int((w-len_star)/2)
         str_margin = " " * length_margin
         print(f"{str_margin}{str_middle}{str_margin}\n")
 
 
-n = 7
+
+n = 5
 printDiamondEmpty(n)
+printDiamondFilled(n)
