@@ -1,0 +1,9 @@
+d = {}
+n = int(input("how many items?: "))
+
+for i in range(n): 
+    roll_no = input("enter roll number: ")
+    marks = input("enter marks: ")
+    d[roll_no] = marks 
+
+print(d)
