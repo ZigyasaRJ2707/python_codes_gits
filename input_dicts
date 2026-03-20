@@ -1,9 +1,8 @@
-d = {}
-n = int(input("how many items?: "))
+d1 = {1:11, 2:12}
+d2 = {1:11, 2:12, 3:13, 4:15}
 
-for i in range(n): 
-    roll_no = input("enter roll number: ")
-    marks = input("enter marks: ")
-    d[roll_no] = marks 
-
-print(d)
+for i in d2: 
+    for j in d1: 
+        if d2[i]==d1[j]: 
+            break 
+        print("d1 contained in d2")

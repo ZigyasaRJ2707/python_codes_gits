@@ -1,0 +1,5 @@
+def volume(length, width, height): 
+    vol = length * width * height 
+    print(vol)
+
+volume(12, 20, 30)
