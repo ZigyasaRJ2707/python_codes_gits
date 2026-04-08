@@ -8,7 +8,7 @@ def is_prime(n):
         return True 
 total = 0 
 for k in range(1, 1000): 
-    if is_prime(k):
+    if is_prime(k) and is_prime(k+2):
          total+=1 
 
 print(total)
