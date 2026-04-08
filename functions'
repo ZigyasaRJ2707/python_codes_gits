@@ -1,5 +1,5 @@
-def volume(length, width, height): 
-    vol = length * width * height 
-    print(vol)
+def cube(n=2): 
+    return n ** 3 
 
-volume(12, 20, 30)
+cube()
+cube(23)
