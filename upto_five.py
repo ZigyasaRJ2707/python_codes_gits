@@ -9,6 +9,8 @@ def is_prime(n):
 total = 0 
 for k in range(1, 1000): 
     if is_prime(k) and is_prime(k+2):
-         last_pair = (k, k+2)
+         print(k, k+2)
+         total+=1 
+         if total==5:
+             break
 
-print(last_pair)
