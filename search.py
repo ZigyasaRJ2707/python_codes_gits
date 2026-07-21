@@ -10,7 +10,7 @@ try:
     while True:
         record = pickle.load(f)
 
-        if record[0] == name:
+        if record == name:
             print(record)
             found = True
             break
