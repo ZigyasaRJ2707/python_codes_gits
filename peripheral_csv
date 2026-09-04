@@ -1,0 +1,25 @@
+import csv 
+def add_device():
+    f = open("Peripheral.csv", "a", newline="")
+    w = csv.writer(f)
+    n = int(input("enter how many devices to be added: "))
+    for i in range(n):
+        p_id = int(input("enter device id: "))
+        p_name = input("enter device name: ")
+        price = int(input("enter the device price: "))
+        w.writerow([p_id, p_name, price])
+    print("records added.")
+    f.close()
+def count_device():
+    f = open("Peripheral.csv", "r", newline="")
+    r = csv.reader(f)
+    count = 0
+    for row in r:
+        if int(row[2]) < 1000:
+            count+=1
+    print("number of devices with price less than 1000: ", count)
+    f.close()
+add_device()
+count_device()
+        
+
